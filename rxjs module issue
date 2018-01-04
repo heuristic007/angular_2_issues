@@ -1,0 +1,7 @@
+10/22/2017 #rxjs #lift<R> #Subject.d.ts
+
+When working on Angular program development, I encountered a problem in rxjs module. It is solved by changing
+lift<R>(operator: Operator<T, R>): Observable<R>;
+to 
+lift<T>(operator: any): Observable<T>;
+This is changed in Subject.d.ts
